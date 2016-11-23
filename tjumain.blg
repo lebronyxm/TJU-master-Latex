@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: tjumain.aux
+A level-1 auxiliary file: body/conclusion.aux
+The style file: TJUThesis.bst
+A level-1 auxiliary file: appendix/publications.aux
+A level-1 auxiliary file: appendix/acknowledgements.aux
+Database file #1: references/reference.bib
+You're missing a field name---line 368 of file references/reference.bib
+ : 
+ : %URL="http://ci.nii.ac.jp/naid/80018809966/en/",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 397 of file references/reference.bib
+ : @inproceedings{ganesh2009fast
+ :                              ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 514 of file references/reference.bib
+ :    
+ :    % publisher = {NIPS}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+-- BUPTThesis.bst version 0.2 (2009/01/25) by Yu Zhang.
+-- http://code.google.com/p/buptthesis/
+-- See the "userguide.pdf" manual for usage information.
+Warning--The editor in cabral2013unifying is missing.
+Warning--empty editor in cabral2013unifying
+Warning--The editor in ganesh2009fast is missing.
+Warning--empty editor in ganesh2009fast
+Warning--empty pages in lin2010augmented
+Warning--The editor in lin2011linearized is missing.
+Warning--empty editor in lin2011linearized
+Warning--There is month but no year in Kodak
+Warning--empty pages in Kodak
+Warning--There is month but no year in omp
+Warning--empty pages in omp
+Warning--The editor in li2014non is missing.
+Warning--empty editor in li2014non
+Warning--The editor in zheng2012practical is missing.
+Warning--empty editor in zheng2012practical
+Warning--The editor in zhao2014robust is missing.
+Warning--empty editor in zhao2014robust
+Warning--The editor in bennett2007netflix is missing.
+Warning--empty editor in bennett2007netflix
+Warning--The editor in zhang2011camera is missing.
+Warning--empty editor in zhang2011camera
+Warning--The editor in barzigar2013mixture is missing.
+Warning--empty editor in barzigar2013mixture
+Warning--The editor in meng2013cyclic is missing.
+Warning--empty editor in meng2013cyclic
+Warning--The editor in jia2012robust is missing.
+Warning--empty editor in jia2012robust
+Warning--The editor in fazel2003log is missing.
+Warning--empty editor in fazel2003log
+Warning--The editor in chen2011robust is missing.
+Warning--empty editor in chen2011robust
+Warning--empty pages in chen2011robust
+Warning--The editor in patel2013latent is missing.
+Warning--empty editor in patel2013latent
+Warning--The editor in mairal2009online is missing.
+Warning--empty editor in mairal2009online
+Warning--The editor in pati1993orthogonal is missing.
+Warning--empty editor in pati1993orthogonal
+Warning--The editor in meka2009matrix is missing.
+Warning--empty editor in meka2009matrix
+Warning--The editor in saab2008stable is missing.
+Warning--empty editor in saab2008stable
+Warning--The editor in Lee07efficientsparse is missing.
+Warning--empty editor in Lee07efficientsparse
+
+Done.
+(There were 3 error messages)

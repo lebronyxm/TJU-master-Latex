@@ -1,0 +1,62 @@
+% !Mode:: "TeX:UTF-8"
+
+
+\ctitle{结构性缺失低秩矩阵重建研究 \\ 及其图像处理应用}  %封面用论文标题，自己可手动断行
+\etitle{Reconstruction of Structurally-Incomplete Matrices and Its Image Processing Applications}
+\caffil{天津大学电子信息工程学院} %学院名称
+\csubjecttitle{学科专业}
+\csubject{信息与通信工程}   %专业
+\cauthortitle{研究生}     % 学位
+\cauthor{杨雪梦}   %学生姓名
+\csupervisortitle{指导教师}
+\csupervisor{杨敬钰~副教授} %导师姓名
+
+\declaretitle{独创性声明}
+\declarecontent{
+本人声明所呈交的学位论文是本人在导师指导下进行的研究工作和取得的研究成果，除了文中特别加以标注和致谢之处外，论文中不包含其他人已经发表或撰写过的研究成果，也不包含为获得 {\underline{\kai\textbf{~ 天津大学~}}} 或其他教育机构的学位或证书而使用过的材料。与我一同工作的同志对本研究所做的任何贡献均已在论文中作了明确的说明并表示了谢意。
+}
+\authorizationtitle{学位论文版权使用授权书}
+\authorizationcontent{
+本学位论文作者完全了解{\underline{\kai\textbf{~天津大学~}}}有关保留、使用学位论文的规定。特授权{\underline{\kai\textbf{~天津大学~}}} 可以将学位论文的全部或部分内容编入有关数据库进行检索，并采用影印、缩印或扫描等复制手段保存、汇编以供查阅和借阅。同意学校向国家有关部门或机构送交论文的复印件和磁盘。
+}
+\authorizationadd{(保密的学位论文在解密后适用本授权说明)}
+\authorsigncap{学位论文作者签名:}
+\supervisorsigncap{导师签名:}
+\signdatecap{签字日期:}
+
+
+%\cdate{\CJKdigits{\the\year} 年\CJKnumber{\the\month} 月 \CJKnumber{\the\day} 日}
+% 如需改成二零一二年四月二十五日的格式，可以直接输入，即如下所示
+ \cdate{二零一六年十二月}
+% \cdate{\the\year 年\the\month 月 \the\day 日} % 此日期显示格式为阿拉伯数字 如2012年4月25 日
+\cabstract{
+大多数传统矩阵重建算法都是利用矩阵的低秩特性或者相关改进先验信息来约束待重建矩阵。当观测矩阵中的缺失元素位置满足随机分布时，这些方法可以有效地对缺失元素进行恢复。然而，在实际的应用中，矩阵中缺失的元素往往不符合随机分布这一假设。相反，矩阵中缺失元素的位置常常表现出一定的结构性，而这些具有结构性缺失的矩阵则无法使用只基于低秩特性的传统矩阵重建方法来进行恢复。为了解决这一问题，本文同时使用低秩特性和稀疏特性两种先验信息，提出一类新的矩阵重建模型及其求解算法。论文的工作成果如下：
+
+1.~提出基于重加权低秩先验和稀疏先验的结构性缺失矩阵重建模（MC-ReLaSP），克服传统方法只能处理随机缺失矩阵的缺点。该模型使用低秩先验约束待重建矩阵，从而探索矩阵行间以及列间的相关性；使用稀疏先验约束待重建矩阵，从而利用矩阵行内或列内的相关性；使用重加权策略分别对低秩特性和稀疏特性两个先验进行强化，从而提升矩阵重建精度。
+
+2.~以~MC-ReLaSP~模型为基础，进一步考虑矩阵受不同噪声污染的情况，提出了有噪声的结构性缺失矩阵重建模型：高斯噪声矩阵重建模型（MR-ReLaSP1）和脉冲噪声矩阵重建模型（MR-ReLaSP2）。扩展模型能够对同时遭受元素缺失和元素受噪的矩阵进行重建。
+
+3.~针对所提的三个模型，提出增广拉格朗日乘子法框架下的交替方向算法。在重加权的整体框架下，将等式约束通过增广拉格朗日乘子法转化为一系列无约束子问题。采用交替方向方法解耦子问题的多元变量，从而降低优化问题的复杂度。
+
+4.~评测本文模型与传统低秩矩阵重建模型的恢复能力，并探索所提模型的多种图像处理应用。合成数据上的评测结果表明，所提模型对结构性缺失矩阵的恢复性能显著超越传统低秩矩阵重建方法。本文将所提模型成功应用于图像填充、图像去噪、图像去雨线等应用，并且获得出色图像恢复性能。
+}
+
+\ckeywords{低秩矩阵重建，稀疏表示，重加权，图像恢复}
+
+\eabstract{
+Most matrix reconstruction methods impose a low-rank prior or its variants to well pose the problem, which can reconstruct randomly-missing entries in a matrix efficiently. However, in practical applications, these missing entries are not distributed randomly, but represent a trend just like structural missing, which cannot be handled by the rank minimization prior individually. To remedy this, this paper introduces new matrix reconstruction models and algorithms using double priors on the latent matrix. The main contents of this thesis are summarized as follows:
+
+1.~This paper proposed a structurally-incomplete matrix completion model (MC-ReLaSP) based on reweighted low-rank and sparsity priors, complementing the classic matrix reconstruction models that handle random missing only. In the proposed model, the matrix is regularized by a low-rank prior to exploit the inter-column and inter-row correlations, and its columns/rows are regularized by a sparsity prior to exploit intra-column/row correlations. Both the low-rank and sparse priors are reweighted on the fly to promote low-rankness and sparsity, respectively.
+
+2.~This paper proposed two variant models, i.e. MR-ReLaSP1 model for Gaussian noise and MR-ReLaSP2 model for impulse noise, by considering both structural missing and noise in observed entries based on the MC-ReLaSP model, which enhances the robustness of our proposed models in practical applications.
+
+3.~Numerical algorithms to solve our models are derived via the alternating direction method under the augmented Lagrangian multiplier (ALM-ADM) framework. The proposed algorithm has a low computational complexity benefiting from ADM.
+
+4.~We evaluate the recoverability of our proposed models and classic matrix reconstruction models, and apply our models to various image processing applications. Results on synthetic data show that the proposed models outperform the classic ones. Our models are quite effective in image processing applications, such as image inpainting, image denoising and image rain-streak removing.
+}
+
+\ekeywords{Low rank matrix reconstruction, Sparse representation, Iterative reweighting, Image restoration }
+
+\makecover
+
+\clearpage  %加上去掉页码
